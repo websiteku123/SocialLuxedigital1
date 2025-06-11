@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk Panel Pterodactyl SocialLuxe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #007bff; /* Blue for highlights */
+            --secondary-color: #28a745; /* Green for success/CTA */
+            --dark-bg: #1a1a2e; /* Dark background */
+            --card-bg: #21213E; /* Slightly lighter dark for cards */
+            --text-light: #e0e0e0; /* Light text color */
+            --text-dark: #333; /* Dark text for contrast */
+            --border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1a1a2e, #16213e); /* Digital store background */
+            color: var(--text-light);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        .header {
+            width: 100%;
+            padding: 20px 0;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            margin-bottom: 30px;
+        }
+
+        
+        .container {
+            width: 95%;
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            padding: 20px;
+        }
+
+        .product-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            border-color: var(--primary-color);
+        }
+
+        .product-card h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--primary-color);
+            font-size: 1.8em;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .product-card .price {
+            font-size: 2.2em;
+            font-weight: 700;
+            color: #28a745; /* Green for price */
+            margin-bottom: 20px;
+        }
+
+        .product-card .price span {
+            font-size: 0.6em;
+            font-weight: 400;
+            color: var(--text-light);
+        }
+
+        .product-list {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 25px;
+            text-align: left;
+            flex-grow: 1; /* Allow list to take available space */
+        }
+
+        .product-list li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            font-size: 1em;
+            color: var(--text-light);
+        }
+
+        .product-list li i {
+            margin-right: 10px;
+            color: var(--primary-color);
+            font-size: 1.1em;
+        }
+
+        .btn-whatsapp {
+            background-color: #25D366; /* WhatsApp green */
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            margin-top: 20px; /* Space from list */
+            width: fit-content;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #1DA851;
+            transform: translateY(-2px);
+        }
+
+        .whatsapp-section {
+            margin-top: 40px;
+            text-align: center;
+            width: 100%;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.2);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Specific styles for Unlimited GB */
+        .highlight-feature {
+            font-weight: 700;
+            color: #00ff00; /* Bright green */
+            text-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            .container {
+                grid-template-columns: 1fr; /* Single column on smaller screens */
+                padding: 15px;
+            }
+            .product-card {
+                padding: 20px;
+            }
+            .product-card h2 {
+                font-size: 1.6em;
+            }
+            .product-card .price {
+                font-size: 2em;
+            }
+            .btn-whatsapp {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        
+        <h1>Produk Digital SocialLuxe Official</h1>
+    </div>
+
+    <div class="container">
+        <div class="product-card">
+            <h2>Panel Pterodactyl</h2>
+            <div class="price">Mulai dari Rp1.000-10.000<span>/bulan</span></div>
+            <ul class="product-list">
+                <li><i class="fas fa-server"></i> Panel Admin Pterodactyl</li>
+                <li><i class="fas fa-microchip"></i> RAM: 1GB - 10GB (Pilih)</li>
+                <li><i class="fas fa-hdd"></i> Disk: 1 - <span class="highlight-feature">Unlimited GB</span></li>
+                <li><i class="fas fa-network-wired"></i> Bandwidth: Unlimited</li>
+                <li><i class="fas fa-database"></i> Database MySQL</li>
+                <li><i class="fas fa-box"></i> Fitur Backup Otomatis</li>
+                <li><i class="fas fa-shield-alt"></i> Proteksi DDoS Dasar</li>
+                <li><i class="fas fa-headset"></i> Support 24/7</li>
+            </ul>
+            <div class="product-features-panel">
+                <p>Tersedia opsi Panel Pterodactyl: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 hingga Unlimited GB!</p>
+                <p>Harga tergantung spesifikasi dan periode.</p>
+            </div>
+            <a href="https://wa.me/6285814422462?text=Halo%2C%20saya%20tertarik%20dengan%20Panel%20Pterodactyl%20Anda." target="_blank" class="btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> Pesan Sekarang
+            </a>
+        </div>
+
+        <div class="product-card">
+            <h2>Reseller Panel</h2>
+            <div class="price">Rp5.000<span>/bulan</span></div>
+            <ul class="product-list">
+                <li><i class="fas fa-handshake"></i> Hak Jual Kembali Panel</li>
+                <li><i class="fas fa-tools"></i> Dashboard Reseller Lengkap</li>
+                <li><i class="fas fa-user-friends"></i> Kelola Klien Anda</li>
+                <li><i class="fas fa-chart-line"></i> Monitoring Penggunaan</li>
+                <li><i class="fas fa-globe"></i> Kustomisasi Domain</li>
+                <li><i class="fas fa-dollar-sign"></i> Atur Harga Anda Sendiri</li>
+                <li><i class="fas fa-headset"></i> Support Khusus Reseller</li>
+            </ul>
+             <a href="https://wa.me/6285814422462?text=Halo%2C%20saya%20tertarik%20dengan%20Reseller%20Panel%20Anda." target="_blank" class="btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> Pesan Sekarang
+            </a>
+        </div>
+
+        <div class="product-card">
+            <h2>PT Panel</h2>
+            <div class="price">Rp20.000<span>/bulan</span></div>
+            <ul class="product-list">
+                <li><i class="fas fa-lock"></i> Panel Private Label</li>
+                <li><i class="fas fa-id-badge"></i> Brand Anda Sendiri</li>
+                <li><i class="fas fa-user-shield"></i> Akses Root (Terbatas)</li>
+                <li><i class="fas fa-cogs"></i> Kontrol Server Lebih Lanjut</li>
+                <li><i class="fas fa-file-invoice"></i> Billing System Integrasi</li>
+                <li><i class="fas fa-headset"></i> Prioritas Support Premium</li>
+            </ul>
+             <a href="https://wa.me/6285814422462?text=Halo%2C%20saya%20tertarik%20dengan%20PT%20Panel%20Anda." target="_blank" class="btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> Pesan Sekarang
+            </a>
+        </div>
+
+        <div class="product-card">
+            <h2>Subdomain</h2>
+            <div class="price">Rp2.000<span>/tahun</span></div>
+            <ul class="product-list">
+                <li><i class="fas fa-globe-americas"></i> Subdomain Kustom</li>
+                <li><i class="fas fa-check"></i> Aktivasi Cepat</li>
+                <li><i class="fas fa-cloud"></i> DNS Management</li>
+                <li><i class="fas fa-infinity"></i> Unlimited Subdomain (Tergantung Paket Utama)</li>
+                <li><i class="fas fa-link"></i> Cocok untuk Website/Panel Kecil</li>
+            </ul>
+             <a href="https://wa.me/6285814422462?text=Halo%2C%20saya%20tertarik%20dengan%20Subdomain%20Anda." target="_blank" class="btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> Pesan Sekarang
+            </a>
+        </div>
+
+        <div class="product-card">
+            <h2>Reseller SUBDomain</h2>
+            <div class="price">Rp7.000<span>/bulan</span></div>
+            <ul class="product-list">
+                <li><i class="fas fa-globe"></i> Jual Berbagai Ekstensi Domain</li>
+                <li><i class="fas fa-certificate"></i> Lisensi Reseller Domain</li>
+                <li><i class="fas fa-tags"></i> Harga Domain Kompetitif</li>
+                <li><i class="fas fa-money-bill-wave"></i> Margin Keuntungan Tinggi</li>
+                <li><i class="fas fa-user-cog"></i> Dashboard Reseller Domain</li>
+                <li><i class="fas fa-headset"></i> Support Reseller Domain</li>
+            </ul>
+             <a href="https://wa.me/6285814422462?text=Halo%2C%20saya%20tertarik%20dengan%20Reseller%20Domain%20Anda." target="_blank" class="btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> Pesan Sekarang
+            </a>
+        </div>
+
+        <div class="product-card">
+            <h2>Owner Panel</h2>
+            <div class="price">Harga Kustom</div>
+            <ul class="product-list">
+                <li><i class="fas fa-crown"></i> Kontrol Penuh Server</li>
+                <li><i class="fas fa-server"></i> Dedicated Server/VPS</li>
+                <li><i class="fas fa-cogs"></i> Konfigurasi Bebas</li>
+                <li><i class="fas fa-globe-asia"></i> IP Dedicated</li>
+                <li><i class="fas fa-network-wired"></i> Infrastruktur Kustom</li>
+                <li><i class="fas fa-users-cog"></i> Manajemen Tim</li>
+                <li><i class="fas fa-life-ring"></i> Support Prioritas Tinggi</li>
+            </ul>
+             <a href="https://wa.me/6285814422462?text=Halo%2C%20saya%20tertarik%20dengan%20Owner%20Panel%20Anda%20dan%20ingin%20tahu%20harganya." target="_blank" class="btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> Hubungi Kami
+            </a>
+        </div>
+    </div>
+
+    <div class="whatsapp-section">
+        <p>Ada pertanyaan atau ingin melakukan pemesanan?</p>
+        <a href="https://wa.me/6285814422462?text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20produk%20Anda." target="_blank" class="btn-whatsapp">
+            <i class="fab fa-whatsapp"></i> Chat via WhatsApp
+        </a>
+    </div>
+
+</body>
+</html>
