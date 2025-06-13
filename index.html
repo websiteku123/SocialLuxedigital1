@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produk Panel Pterodactyl SocialLuxe</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <title> Produk Layanan SocialLuxedigital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         :root {
-            --primary-color: #007bff; /* Blue for highlights */
-            --secondary-color: #28a745; /* Green for success/CTA */
-            --dark-bg: #1a1a2e; /* Dark background */
-            --card-bg: #21213E; /* Slightly lighter dark for cards */
-            --text-light: #e0e0e0; /* Light text color */
-            --text-dark: #333; /* Dark text for contrast */
+            --primary-color: #FDFAF6; /* Biru standar untuk highlight */
+            --secondary-color: #FDFAF6; /* Hijau standar untuk sukses/CTA */
+            --dark-bg: #3674B5; /* Background gelap */
+            --card-bg: #3674B5; /* Sedikit lebih terang dari dark-bg untuk kartu */
+            --text-light: #e0e0e0; /* Warna teks terang */
+            --text-dark: #333; /* Warna teks gelap (untuk kontras jika diperlukan) */
             --border-color: rgba(255, 255, 255, 0.1);
         }
 
@@ -21,7 +21,7 @@
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #1a1a2e, #16213e); /* Digital store background */
+            background: linear-gradient(135deg, #FDFAF6, #FDFAF6); /* Latar belakang store digital, gradien gelap minimalis */
             color: var(--text-light);
             display: flex;
             flex-direction: column;
@@ -39,7 +39,14 @@
             margin-bottom: 30px;
         }
 
-        
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: #fff;
+            font-size: 2.5em;
+            text-shadow: 0 0 10px rgba(0, 123, 255, 0.7);
+        }
+
         .container {
             width: 95%;
             max-width: 1200px;
@@ -80,7 +87,7 @@
         .product-card .price {
             font-size: 2.2em;
             font-weight: 700;
-            color: #28a745; /* Green for price */
+            color: var(--secondary-color); /* Hijau untuk harga */
             margin-bottom: 20px;
         }
 
@@ -95,13 +102,13 @@
             padding: 0;
             margin-bottom: 25px;
             text-align: left;
-            flex-grow: 1; /* Allow list to take available space */
+            flex-grow: 1; /* Biarkan daftar mengambil ruang yang tersedia */
         }
 
         .product-list li {
             margin-bottom: 10px;
             display: flex;
-            align-items: center;
+            align-items: flex-start; /* Align icon and text to top if multi-line */
             font-size: 1em;
             color: var(--text-light);
         }
@@ -110,6 +117,8 @@
             margin-right: 10px;
             color: var(--primary-color);
             font-size: 1.1em;
+            flex-shrink: 0; /* Prevent icon from shrinking */
+            padding-top: 2px; /* Slight adjustment for alignment */
         }
 
         .btn-whatsapp {
@@ -127,7 +136,7 @@
             justify-content: center;
             gap: 10px;
             transition: background-color 0.3s ease, transform 0.2s ease;
-            margin-top: 20px; /* Space from list */
+            margin-top: 20px; /* Jarak dari list */
             width: fit-content;
         }
 
@@ -146,10 +155,10 @@
             box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
         }
 
-        /* Specific styles for Unlimited GB */
+        /* Gaya spesifik untuk Unlimited GB */
         .highlight-feature {
             font-weight: 700;
-            color: #00ff00; /* Bright green */
+            color: #00ff00; /* Hijau cerah */
             text-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
         }
 
@@ -159,7 +168,7 @@
                 font-size: 2em;
             }
             .container {
-                grid-template-columns: 1fr; /* Single column on smaller screens */
+                grid-template-columns: 1fr; /* Satu kolom di layar kecil */
                 padding: 15px;
             }
             .product-card {
@@ -180,28 +189,24 @@
 <body>
 
     <div class="header">
-        
-        <h1>Produk Digital SocialLuxe Official</h1>
+        <h1>Layanan SocialLuxedigital</h1>
     </div>
 
     <div class="container">
         <div class="product-card">
             <h2>Panel Pterodactyl</h2>
-            <div class="price">Mulai dari Rp1.000-10.000<span>/bulan</span></div>
+            <div class="price">Mulai dari Rp1.000/12.000<span>/bulan</span></div>
             <ul class="product-list">
                 <li><i class="fas fa-server"></i> Panel Admin Pterodactyl</li>
-                <li><i class="fas fa-microchip"></i> RAM: 1GB - 10GB (Pilih)</li>
-                <li><i class="fas fa-hdd"></i> Disk: 1 - <span class="highlight-feature">Unlimited GB</span></li>
+                <li><i class="fas fa-microchip"></i> RAM: 1GB - UNLI (Pilih)</li>
+                <li><i class="fas fa-hdd"></i> Disk: 1GB - <span class="highlight-feature">Unlimited GB</span></li>
                 <li><i class="fas fa-network-wired"></i> Bandwidth: Unlimited</li>
                 <li><i class="fas fa-database"></i> Database MySQL</li>
                 <li><i class="fas fa-box"></i> Fitur Backup Otomatis</li>
                 <li><i class="fas fa-shield-alt"></i> Proteksi DDoS Dasar</li>
                 <li><i class="fas fa-headset"></i> Support 24/7</li>
             </ul>
-            <div class="product-features-panel">
-                <p>Tersedia opsi Panel Pterodactyl: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 hingga Unlimited GB!</p>
-                <p>Harga tergantung spesifikasi dan periode.</p>
-            </div>
+            <p style="font-size: 0.9em; color: #FDFAF6;">Tersedia opsi Panel Pterodactyl: 1GB, 2GB, 3GB, 4GB, 5GB, 6GB, 7GB, 8GB, 9GB, 10GB dan Unlimited GB!</p>
             <a href="https://wa.me/6285814422462?text=Halo%2C%20saya%20tertarik%20dengan%20Panel%20Pterodactyl%20Anda." target="_blank" class="btn-whatsapp">
                 <i class="fab fa-whatsapp"></i> Pesan Sekarang
             </a>
@@ -209,7 +214,7 @@
 
         <div class="product-card">
             <h2>Reseller Panel</h2>
-            <div class="price">Rp5.000<span>/bulan</span></div>
+            <div class="price">Rp5.000</span></div>
             <ul class="product-list">
                 <li><i class="fas fa-handshake"></i> Hak Jual Kembali Panel</li>
                 <li><i class="fas fa-tools"></i> Dashboard Reseller Lengkap</li>
@@ -219,14 +224,14 @@
                 <li><i class="fas fa-dollar-sign"></i> Atur Harga Anda Sendiri</li>
                 <li><i class="fas fa-headset"></i> Support Khusus Reseller</li>
             </ul>
-             <a href="https://wa.me/6285814422462?text=Halo%2C%20saya%20tertarik%20dengan%20Reseller%20Panel%20Anda." target="_blank" class="btn-whatsapp">
+            <a href="https://wa.me/6285814422462?text=Halo%2C%20saya%20tertarik%20dengan%20Reseller%20Panel%20Anda." target="_blank" class="btn-whatsapp">
                 <i class="fab fa-whatsapp"></i> Pesan Sekarang
             </a>
         </div>
 
         <div class="product-card">
             <h2>PT Panel</h2>
-            <div class="price">Rp20.000<span>/bulan</span></div>
+            <div class="price">Rp20.000</span></div>
             <ul class="product-list">
                 <li><i class="fas fa-lock"></i> Panel Private Label</li>
                 <li><i class="fas fa-id-badge"></i> Brand Anda Sendiri</li>
@@ -235,38 +240,7 @@
                 <li><i class="fas fa-file-invoice"></i> Billing System Integrasi</li>
                 <li><i class="fas fa-headset"></i> Prioritas Support Premium</li>
             </ul>
-             <a href="https://wa.me/6285814422462?text=Halo%2C%20saya%20tertarik%20dengan%20PT%20Panel%20Anda." target="_blank" class="btn-whatsapp">
-                <i class="fab fa-whatsapp"></i> Pesan Sekarang
-            </a>
-        </div>
-
-        <div class="product-card">
-            <h2>Subdomain</h2>
-            <div class="price">Rp2.000<span>/tahun</span></div>
-            <ul class="product-list">
-                <li><i class="fas fa-globe-americas"></i> Subdomain Kustom</li>
-                <li><i class="fas fa-check"></i> Aktivasi Cepat</li>
-                <li><i class="fas fa-cloud"></i> DNS Management</li>
-                <li><i class="fas fa-infinity"></i> Unlimited Subdomain (Tergantung Paket Utama)</li>
-                <li><i class="fas fa-link"></i> Cocok untuk Website/Panel Kecil</li>
-            </ul>
-             <a href="https://wa.me/6285814422462?text=Halo%2C%20saya%20tertarik%20dengan%20Subdomain%20Anda." target="_blank" class="btn-whatsapp">
-                <i class="fab fa-whatsapp"></i> Pesan Sekarang
-            </a>
-        </div>
-
-        <div class="product-card">
-            <h2>Reseller SUBDomain</h2>
-            <div class="price">Rp7.000<span>/bulan</span></div>
-            <ul class="product-list">
-                <li><i class="fas fa-globe"></i> Jual Berbagai Ekstensi Domain</li>
-                <li><i class="fas fa-certificate"></i> Lisensi Reseller Domain</li>
-                <li><i class="fas fa-tags"></i> Harga Domain Kompetitif</li>
-                <li><i class="fas fa-money-bill-wave"></i> Margin Keuntungan Tinggi</li>
-                <li><i class="fas fa-user-cog"></i> Dashboard Reseller Domain</li>
-                <li><i class="fas fa-headset"></i> Support Reseller Domain</li>
-            </ul>
-             <a href="https://wa.me/6285814422462?text=Halo%2C%20saya%20tertarik%20dengan%20Reseller%20Domain%20Anda." target="_blank" class="btn-whatsapp">
+            <a href="https://wa.me/6285814422462?text=Halo%2C%20saya%20tertarik%20dengan%20PT%20Panel%20Anda." target="_blank" class="btn-whatsapp">
                 <i class="fab fa-whatsapp"></i> Pesan Sekarang
             </a>
         </div>
@@ -283,18 +257,169 @@
                 <li><i class="fas fa-users-cog"></i> Manajemen Tim</li>
                 <li><i class="fas fa-life-ring"></i> Support Prioritas Tinggi</li>
             </ul>
-             <a href="https://wa.me/6285814422462?text=Halo%2C%20saya%20tertarik%20dengan%20Owner%20Panel%20Anda%20dan%20ingin%20tahu%20harganya." target="_blank" class="btn-whatsapp">
+            <a href="https://wa.me/6285814422462?text=Halo%2C%20saya%20tertarik%20dengan%20Owner%20Panel%20Anda%20dan%20ingin%20tahu%20harganya." target="_blank" class="btn-whatsapp">
                 <i class="fab fa-whatsapp"></i> Hubungi Kami
             </a>
         </div>
+
+        <div class="product-card">
+            <h2>VPS (Reguler & premium)</h2>
+            <div class="price">Sesuai ram dan core</span></div>
+            <ul class="product-list">
+                <li><i class="fas fa-cloud"></i> Server Fleksibel & Terisolasi</li>
+                <li><i class="fas fa-tachometer-alt"></i> Performa Cepat & Stabil</li>
+                <li><i class="fas fa-shield-alt"></i> Keamanan Tinggi</li>
+                <li><i class="fas fa-layer-group"></i> Skalabilitas Mudah</li>
+                <li><i class="fas fa-map-marked-alt"></i> Pilihan Lokasi Data Center</li>
+                <li><i class="fas fa-money-bill"></i> Hemat Biaya Operasional</li>
+                <li><i class="fas fa-tools"></i> Akses Root Penuh</li>
+            </ul>
+            <a href="https://wa.me/6285814422462?text=Halo%2C%20saya%20tertarik%20dengan%20produk%20VPS%20Anda." target="_blank" class="btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> Pesan Sekarang
+            </a>
+        </div>
+
+        <div class="product-card">
+            <h2>Reseller VPS</h2>
+            <div class="price">Rp100.000</span></div>
+            <ul class="product-list">
+                <li><i class="fas fa-globe-americas"></i> Jual VPS atas Nama Anda</li>
+                <li><i class="fas fa-dollar-sign"></i> Potensi Keuntungan Besar</li>
+                <li><i class="fas fa-users"></i> Panel Manajemen Klien VPS</li>
+                <li><i class="fas fa-chart-bar"></i> Statistik Penggunaan VPS</li>
+                <li><i class="fas fa-life-ring"></i> Support Teknis Reseller</li>
+                <li><i class="fas fa-lightbulb"></i> Bimbingan Bisnis Awal</li>
+            </ul>
+            <a href="https://wa.me/6285814422462?text=Halo%2C%20saya%20tertarik%20dengan%20Reseller%20VPS%20Anda." target="_blank" class="btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> Pesan Sekarang
+            </a>
+        </div>
+
+        <div class="product-card">
+            <h2>Owner Reseller VPS</h2>
+            <div class="price">Rp200.000</div>
+            <ul class="product-list">
+                <li><i class="fas fa-crown"></i> Kendali Penuh Infrastruktur VPS</li>
+                <li><i class="fas fa-server"></i> Dedicated Server/Node VPS</li>
+                <li><i class="fas fa-certificate"></i> Branding Penuh Anda</li>
+                <li><i class="fas fa-cog"></i> Kustomisasi Ekstensif</li>
+                <li><i class="fas fa-handshake"></i> Kemitraan Jangka Panjang</li>
+                <li><i class="fas fa-star"></i> Support Prioritas Ekstra</li>
+            </ul>
+            <a href="https://wa.me/6285814422462?text=Halo%2C%20saya%20tertarik%20dengan%20Owner%20Reseller%20VPS%20Anda%20dan%20ingin%20tahu%20harganya." target="_blank" class="btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> Hubungi Kami
+            </a>
+        </div>
+
+        <div class="product-card">
+            <h2>RENAME SCRIPT</h2>
+            <div class="price">sesuai rename</span></div>
+            <ul class="product-list">
+                <li><i class="fas fa-code"></i> Ganti Nama Variabel/Fungsi</li>
+                <li><i class="fas fa-palette"></i> Ubah Tampilan Script (UI)</li>
+                <li><i class="fas fa-paint-brush"></i> Branding Ulang Script Anda</li>
+                <li><i class="fas fa-file-code"></i> Penyesuaian Kode Dasar</li>
+                <li><i class="fas fa-magic"></i> Script Terlihat Fresh</li>
+            </ul>
+            <a href="https://wa.me/6285814422462?text=Halo%2C%20saya%20tertarik%20dengan%20layanan%20RENAME%20SCRIPT." target="_blank" class="btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> Pesan Sekarang
+            </a>
+        </div>
+
+        <div class="product-card">
+            <h2>SCRIPT BOT WA</h2>
+            <div class="price">Sesuai request</div>
+            <ul class="product-list">
+                <li><i class="fab fa-whatsapp"></i> Bot WhatsApp Otomatis</li>
+                <li><i class="fas fa-robot"></i> Fitur Custom Sesuai Request</li>
+                <li><i class="fas fa-hand-holding"></i> Instalasi & Setup Mudah</li>
+                <li><i class="fas fa-gem"></i> Tersedia: LuxeBot, MelBot, dll.</li>
+                <li><i class="fas fa-headset"></i> Support Awal Penggunaan</li>
+                <li><i class="fas fa-money-bill"></i> Solusi Bisnis & Personal</li>
+            </ul>
+            <a href="https://wa.me/6285814422462?text=Halo%2C%20saya%20tertarik%20dengan%20SCRIPT%20BOT%20WA%20Anda." target="_blank" class="btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> Pesan Sekarang
+            </a>
+        </div>
+
+        <div class="product-card">
+            <h2>NOKOS +62/Luar</h2>
+            <div class="price">Mulai Rp10.000<span>/nomor</span></div>
+            <ul class="product-list">
+                <li><i class="fas fa-mobile-alt"></i> Nomor Kosong (NOKOS)</li>
+                <li><i class="fas fa-globe"></i> Tersedia Area +62 (Indonesia)</li>
+                <li><i class="fas fa-globe-asia"></i> Tersedia Area Luar Negeri</li>
+                <li><i class="fas fa-check-circle"></i> Stok Tersedia Cepat</li>
+                <li><i class="fas fa-lock"></i> Privasi Terjaga</li>
+            </ul>
+            <a href="https://wa.me/6285814422462?text=Halo%2C%20saya%20tertarik%20dengan%20JASA%20NOKOS%20Anda." target="_blank" class="btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> Pesan Sekarang
+            </a>
+        </div>
+
+        <div class="product-card">
+            <h2>SETUP / INSTALL VPS/PANEL</h2>
+            <div class="price">Mulai Rp10.000</div>
+            <ul class="product-list">
+                <li><i class="fas fa-terminal"></i> Instalasi Sistem Operasi VPS</li>
+                <li><i class="fas fa-cogs"></i> Konfigurasi Dasar VPS</li>
+                <li><i class="fas fa-server"></i> Instalasi Panel (Pterodactyl, cPanel, dll.)</li>
+                <li><i class="fas fa-check-double"></i> Jaminan Berfungsi</li>
+                <li><i class="fas fa-clock"></i> Proses Cepat & Efisien</li>
+                <li><i class="fas fa-headset"></i> Bantuan Pasca Instalasi</li>
+            </ul>
+            <a href="https://wa.me/6285814422462?text=Halo%2C%20saya%20tertarik%20dengan%20layanan%20SETUP%20/%20INSTALL%20VPS%2FPANEL." target="_blank" class="btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> Pesan Sekarang
+            </a>
+        </div>
+
+        <div class="product-card">
+            <h2>INSTALL NODE HIJAU / STARTWINGS</h2>
+            <div class="price">Mulai Rp5.000</div>
+            <ul class="product-list">
+                <li><i class="fas fa-rocket"></i> Instalasi Node Pterodactyl</li>
+                <li><i class="fas fa-database"></i> Setup Daemon (Wings)</li>
+                <li><i class="fas fa-network-wired"></i> Konfigurasi Jaringan Node</li>
+                <li><i class="fas fa-check-circle"></i> Optimalisasi Performa Node</li>
+                <li><i class="fas fa-plug"></i> Integrasi Panel Pterodactyl</li>
+                <li><i class="fas fa-certificate"></i> Jaminan Kompatibilitas</li>
+            </ul>
+            <a href="https://wa.me/6285814422462?text=Halo%2C%20saya%20tertarik%20dengan%20layanan%20INSTALL%20NODE%20HIJAU%20/%20STARTWINGS." target="_blank" class="btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> Pesan Sekarang
+            </a>
+        </div>
+
+        <div class="product-card">
+            <h2>Subdomain</h2>
+            <div class="price">Rp2.000</span></div>
+            <ul class="product-list">
+                <li><i class="fas fa-globe-americas"></i> Subdomain Kustom</li>
+                <li><i class="fas fa-check"></i> Aktivasi Cepat</li>
+                <li><i class="fas fa-cloud"></i> DNS Management</li>
+                <li><i class="fas fa-infinity"></i> Unlimited Subdomain (Tergantung Paket Utama)</li>
+                <li><i class="fas fa-link"></i> Cocok untuk Website/Panel Kecil</li>
+            </ul>
+             <a href="https://wa.me/6285814422462?text=Halo%2C%20saya%20tertarik%20dengan%20Subdomain%20Anda." target="_blank" class="btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> Pesan Sekarang
+            </a>
+        </div>
+
+        <div class="product-card">
+            <h2>Reseller Subdomain</h2>
+            <div class="price">Rp7.000</span></div>
+            <ul class="product-list">
+                <li><i class="fas fa-globe"></i> Jual Berbagai Ekstensi Domain</li>
+                <li><i class="fas fa-certificate"></i> Lisensi Reseller Domain</li>
+                <li><i class="fas fa-tags"></i> Harga Domain Kompetitif</li>
+                <li><i class="fas fa-money-bill-wave"></i> Margin Keuntungan Tinggi</li>
+                <li><i class="fas fa-user-cog"></i> Dashboard Reseller Domain</li>
+                <li><i class="fas fa-headset"></i> Support Reseller Domain</li>
+            </ul>
+             <a href="https://wa.me/6285814422462?text=Halo%2C%20saya%20tertarik%20dengan%20Reseller%20Domain%20Anda." target="_blank" class="btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> Pesan Sekarang
+            </a>
+        </div>
+
     </div>
 
     <div class="whatsapp-section">
-        <p>Ada pertanyaan atau ingin melakukan pemesanan?</p>
-        <a href="https://wa.me/6285814422462?text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20produk%20Anda." target="_blank" class="btn-whatsapp">
-            <i class="fab fa-whatsapp"></i> Chat via WhatsApp
-        </a>
-    </div>
-
-</body>
-</html>
